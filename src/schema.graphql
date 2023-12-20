@@ -1,0 +1,24 @@
+type Query {
+  hello: String
+  getFlights:[Flight]
+  getOneflight(id: Int): Flight 
+}
+
+type Mutation {
+  addFlight(input: AddFlightInput!): Flight!
+}
+
+type Flight {
+  id: Int!
+  company: String!
+  from: String!
+  to: String!
+  flightNumber: String!
+}
+
+input AddFlightInput {
+  company: String!
+  from: String!
+  to: String!
+  flightNumber: String!
+}

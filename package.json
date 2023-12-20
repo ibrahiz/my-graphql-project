@@ -1,0 +1,26 @@
+{
+  "name": "my-graphql-project",
+  "version": "1.0.0",
+  "description": "graphql exemple",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ibrahim hizeoui",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.7.0",
+    "express": "^4.17.1",
+    "graphql": "^16.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/graphql": "^14.5.0",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
